@@ -1,0 +1,1013 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81FB767D2BAB2F08BD2C1A0C /* Pods_FSGPUImageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EF34F4C6173658CB2FFDAE /* Pods_FSGPUImageTests.framework */; };
+		D43DF99BFDC9ECA67517584A /* Pods_FSGPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF4D3F35468E884AAA496D4 /* Pods_FSGPUImage.framework */; };
+		E96177A724C003DA009EF83A /* FSVideoThumbnailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E96177A624C003DA009EF83A /* FSVideoThumbnailModel.m */; };
+		E96177AA24C005CA009EF83A /* FSThumbnailCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E96177A924C005CA009EF83A /* FSThumbnailCollectionCell.m */; };
+		E96177AD24C02110009EF83A /* FSDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = E96177AC24C02110009EF83A /* FSDragView.m */; };
+		E96177B024C029E8009EF83A /* FSThumbnailSequenceView.m in Sources */ = {isa = PBXBuildFile; fileRef = E96177AF24C029E8009EF83A /* FSThumbnailSequenceView.m */; };
+		E96177B324C03B5C009EF83A /* FSClipVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96177B224C03B5C009EF83A /* FSClipVideoController.m */; };
+		E96177B624C04875009EF83A /* UILabel+FSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E96177B524C04875009EF83A /* UILabel+FSUtility.m */; };
+		E96177B824C14A90009EF83A /* 世界这么大还是遇见你.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E96177B724C14A8F009EF83A /* 世界这么大还是遇见你.mp3 */; };
+		E96177BA24C15453009EF83A /* 百花香.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E96177B924C15453009EF83A /* 百花香.mp3 */; };
+		E984C53E24B835CA002A2A3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E984C53D24B835CA002A2A3A /* AppDelegate.m */; };
+		E984C54424B835CA002A2A3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E984C54324B835CA002A2A3A /* ViewController.m */; };
+		E984C54724B835CA002A2A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E984C54524B835CA002A2A3A /* Main.storyboard */; };
+		E984C54A24B835CA002A2A3A /* FSGPUImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E984C54824B835CA002A2A3A /* FSGPUImage.xcdatamodeld */; };
+		E984C54C24B835CE002A2A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E984C54B24B835CE002A2A3A /* Assets.xcassets */; };
+		E984C54F24B835CE002A2A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E984C54D24B835CE002A2A3A /* LaunchScreen.storyboard */; };
+		E984C55224B835CE002A2A3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E984C55124B835CE002A2A3A /* main.m */; };
+		E984C55C24B835CE002A2A3A /* FSGPUImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E984C55B24B835CE002A2A3A /* FSGPUImageTests.m */; };
+		E984C56724B835CE002A2A3A /* FSGPUImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E984C56624B835CE002A2A3A /* FSGPUImageUITests.m */; };
+		E9D1138A24BD856A00874B1D /* FSCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D1138924BD856A00874B1D /* FSCameraViewController.m */; };
+		E9D1138E24BD865D00874B1D /* FSCameraConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D1138D24BD865D00874B1D /* FSCameraConfig.m */; };
+		E9D1139324BD885000874B1D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D1139224BD885000874B1D /* CoreTelephony.framework */; };
+		E9D1139624BD891D00874B1D /* DNLiveWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D1139424BD891D00874B1D /* DNLiveWindow.m */; };
+		E9D1139E24BD89D600874B1D /* UIImage+FSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D1139D24BD89D600874B1D /* UIImage+FSUtility.m */; };
+		E9D113A424BD9EA000874B1D /* UIView+FSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113A324BD9EA000874B1D /* UIView+FSUtility.m */; };
+		E9D113A724BDA38400874B1D /* FSEditVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113A624BDA38400874B1D /* FSEditVideoController.m */; };
+		E9D113AB24BDA41100874B1D /* FSRecordingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113AA24BDA41100874B1D /* FSRecordingInfo.m */; };
+		E9D113AE24BDA58E00874B1D /* FSCompoundTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113AD24BDA58E00874B1D /* FSCompoundTool.m */; };
+		E9D113B124BDA74B00874B1D /* UIColor+FSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113B024BDA74B00874B1D /* UIColor+FSUtility.m */; };
+		E9D113B424BDA79200874B1D /* FSPathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113B324BDA79200874B1D /* FSPathTool.m */; };
+		E9D113B724BDA96C00874B1D /* FSVideoImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113B624BDA96C00874B1D /* FSVideoImageTool.m */; };
+		E9D113BB24BDAC0000874B1D /* Lovestoned-Thursdays.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9D113BA24BDAC0000874B1D /* Lovestoned-Thursdays.mp3 */; };
+		E9D113C124BEA92700874B1D /* DNPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113C024BEA92700874B1D /* DNPlayerView.m */; };
+		E9D113C424BEB17C00874B1D /* FSStreamingContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113C324BEB17C00874B1D /* FSStreamingContext.m */; };
+		E9D113C724BEDF9900874B1D /* FSTimeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113C624BEDF9900874B1D /* FSTimeLine.m */; };
+		E9D113CA24BEE2B600874B1D /* UIButton+FSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113C924BEE2B600874B1D /* UIButton+FSUtility.m */; };
+		E9D113CF24BF086D00874B1D /* NSString+FSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113CE24BF086D00874B1D /* NSString+FSUtility.m */; };
+		E9D113D324BFE5E900874B1D /* FSClipVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D113D224BFE5E900874B1D /* FSClipVideoView.m */; };
+		E9D113D524BFF85B00874B1D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D113D424BFF85B00874B1D /* MobileCoreServices.framework */; };
+		FAC6E99DB79DC80CEABF77C0 /* Pods_FSGPUImage_FSGPUImageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C631A4F7F46FE65B93AB07BA /* Pods_FSGPUImage_FSGPUImageUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E984C55824B835CE002A2A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E984C53124B835CA002A2A3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E984C53824B835CA002A2A3A;
+			remoteInfo = FSGPUImage;
+		};
+		E984C56324B835CE002A2A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E984C53124B835CA002A2A3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E984C53824B835CA002A2A3A;
+			remoteInfo = FSGPUImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1193AED35DF77E7F477EA737 /* Pods-FSGPUImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSGPUImage.release.xcconfig"; path = "Target Support Files/Pods-FSGPUImage/Pods-FSGPUImage.release.xcconfig"; sourceTree = "<group>"; };
+		3E714B9DA48CFA2B01491A5B /* Pods-FSGPUImageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSGPUImageTests.debug.xcconfig"; path = "Target Support Files/Pods-FSGPUImageTests/Pods-FSGPUImageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		458D63983423A1FA92F1DE0A /* Pods-FSGPUImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSGPUImage.debug.xcconfig"; path = "Target Support Files/Pods-FSGPUImage/Pods-FSGPUImage.debug.xcconfig"; sourceTree = "<group>"; };
+		4CF4D3F35468E884AAA496D4 /* Pods_FSGPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSGPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9EF34F4C6173658CB2FFDAE /* Pods_FSGPUImageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSGPUImageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF87B5D588530BFADFCA8D70 /* Pods-FSGPUImage-FSGPUImageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSGPUImage-FSGPUImageUITests.debug.xcconfig"; path = "Target Support Files/Pods-FSGPUImage-FSGPUImageUITests/Pods-FSGPUImage-FSGPUImageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B12209DD4FBA1DB66F37636B /* Pods-FSGPUImageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSGPUImageTests.release.xcconfig"; path = "Target Support Files/Pods-FSGPUImageTests/Pods-FSGPUImageTests.release.xcconfig"; sourceTree = "<group>"; };
+		BBC5F32C3B8DFDB116ADD272 /* Pods-FSGPUImage-FSGPUImageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSGPUImage-FSGPUImageUITests.release.xcconfig"; path = "Target Support Files/Pods-FSGPUImage-FSGPUImageUITests/Pods-FSGPUImage-FSGPUImageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C631A4F7F46FE65B93AB07BA /* Pods_FSGPUImage_FSGPUImageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSGPUImage_FSGPUImageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96177A524C003DA009EF83A /* FSVideoThumbnailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSVideoThumbnailModel.h; sourceTree = "<group>"; };
+		E96177A624C003DA009EF83A /* FSVideoThumbnailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSVideoThumbnailModel.m; sourceTree = "<group>"; };
+		E96177A824C005CA009EF83A /* FSThumbnailCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSThumbnailCollectionCell.h; sourceTree = "<group>"; };
+		E96177A924C005CA009EF83A /* FSThumbnailCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSThumbnailCollectionCell.m; sourceTree = "<group>"; };
+		E96177AB24C02110009EF83A /* FSDragView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSDragView.h; sourceTree = "<group>"; };
+		E96177AC24C02110009EF83A /* FSDragView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSDragView.m; sourceTree = "<group>"; };
+		E96177AE24C029E8009EF83A /* FSThumbnailSequenceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSThumbnailSequenceView.h; sourceTree = "<group>"; };
+		E96177AF24C029E8009EF83A /* FSThumbnailSequenceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSThumbnailSequenceView.m; sourceTree = "<group>"; };
+		E96177B124C03B5C009EF83A /* FSClipVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSClipVideoController.h; sourceTree = "<group>"; };
+		E96177B224C03B5C009EF83A /* FSClipVideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSClipVideoController.m; sourceTree = "<group>"; };
+		E96177B424C04875009EF83A /* UILabel+FSUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+FSUtility.h"; sourceTree = "<group>"; };
+		E96177B524C04875009EF83A /* UILabel+FSUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FSUtility.m"; sourceTree = "<group>"; };
+		E96177B724C14A8F009EF83A /* 世界这么大还是遇见你.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "世界这么大还是遇见你.mp3"; sourceTree = "<group>"; };
+		E96177B924C15453009EF83A /* 百花香.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "百花香.mp3"; sourceTree = "<group>"; };
+		E984C53924B835CA002A2A3A /* FSGPUImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSGPUImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E984C53C24B835CA002A2A3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E984C53D24B835CA002A2A3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E984C54224B835CA002A2A3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E984C54324B835CA002A2A3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E984C54624B835CA002A2A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E984C54924B835CA002A2A3A /* FSGPUImage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FSGPUImage.xcdatamodel; sourceTree = "<group>"; };
+		E984C54B24B835CE002A2A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E984C54E24B835CE002A2A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E984C55024B835CE002A2A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E984C55124B835CE002A2A3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E984C55724B835CE002A2A3A /* FSGPUImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSGPUImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E984C55B24B835CE002A2A3A /* FSGPUImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSGPUImageTests.m; sourceTree = "<group>"; };
+		E984C55D24B835CE002A2A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E984C56224B835CE002A2A3A /* FSGPUImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSGPUImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E984C56624B835CE002A2A3A /* FSGPUImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSGPUImageUITests.m; sourceTree = "<group>"; };
+		E984C56824B835CE002A2A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D1138824BD856A00874B1D /* FSCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCameraViewController.h; sourceTree = "<group>"; };
+		E9D1138924BD856A00874B1D /* FSCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCameraViewController.m; sourceTree = "<group>"; };
+		E9D1138C24BD865D00874B1D /* FSCameraConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCameraConfig.h; sourceTree = "<group>"; };
+		E9D1138D24BD865D00874B1D /* FSCameraConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCameraConfig.m; sourceTree = "<group>"; };
+		E9D1139024BD878000874B1D /* FSFrameMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSFrameMacro.h; sourceTree = "<group>"; };
+		E9D1139124BD879D00874B1D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E9D1139224BD885000874B1D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E9D1139424BD891D00874B1D /* DNLiveWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNLiveWindow.m; sourceTree = "<group>"; };
+		E9D1139524BD891D00874B1D /* DNLiveWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNLiveWindow.h; sourceTree = "<group>"; };
+		E9D1139C24BD89D600874B1D /* UIImage+FSUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FSUtility.h"; sourceTree = "<group>"; };
+		E9D1139D24BD89D600874B1D /* UIImage+FSUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FSUtility.m"; sourceTree = "<group>"; };
+		E9D113A224BD9EA000874B1D /* UIView+FSUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FSUtility.h"; sourceTree = "<group>"; };
+		E9D113A324BD9EA000874B1D /* UIView+FSUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FSUtility.m"; sourceTree = "<group>"; };
+		E9D113A524BDA38400874B1D /* FSEditVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSEditVideoController.h; sourceTree = "<group>"; };
+		E9D113A624BDA38400874B1D /* FSEditVideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSEditVideoController.m; sourceTree = "<group>"; };
+		E9D113A924BDA41100874B1D /* FSRecordingInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSRecordingInfo.h; sourceTree = "<group>"; };
+		E9D113AA24BDA41100874B1D /* FSRecordingInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSRecordingInfo.m; sourceTree = "<group>"; };
+		E9D113AC24BDA58E00874B1D /* FSCompoundTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCompoundTool.h; sourceTree = "<group>"; };
+		E9D113AD24BDA58E00874B1D /* FSCompoundTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCompoundTool.m; sourceTree = "<group>"; };
+		E9D113AF24BDA74B00874B1D /* UIColor+FSUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+FSUtility.h"; sourceTree = "<group>"; };
+		E9D113B024BDA74B00874B1D /* UIColor+FSUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FSUtility.m"; sourceTree = "<group>"; };
+		E9D113B224BDA79200874B1D /* FSPathTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSPathTool.h; sourceTree = "<group>"; };
+		E9D113B324BDA79200874B1D /* FSPathTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSPathTool.m; sourceTree = "<group>"; };
+		E9D113B524BDA96C00874B1D /* FSVideoImageTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSVideoImageTool.h; sourceTree = "<group>"; };
+		E9D113B624BDA96C00874B1D /* FSVideoImageTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSVideoImageTool.m; sourceTree = "<group>"; };
+		E9D113BA24BDAC0000874B1D /* Lovestoned-Thursdays.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lovestoned-Thursdays.mp3"; sourceTree = "<group>"; };
+		E9D113BF24BEA92700874B1D /* DNPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNPlayerView.h; sourceTree = "<group>"; };
+		E9D113C024BEA92700874B1D /* DNPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNPlayerView.m; sourceTree = "<group>"; };
+		E9D113C224BEB17C00874B1D /* FSStreamingContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSStreamingContext.h; sourceTree = "<group>"; };
+		E9D113C324BEB17C00874B1D /* FSStreamingContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSStreamingContext.m; sourceTree = "<group>"; };
+		E9D113C524BEDF9900874B1D /* FSTimeLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSTimeLine.h; sourceTree = "<group>"; };
+		E9D113C624BEDF9900874B1D /* FSTimeLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSTimeLine.m; sourceTree = "<group>"; };
+		E9D113C824BEE2B600874B1D /* UIButton+FSUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+FSUtility.h"; sourceTree = "<group>"; };
+		E9D113C924BEE2B600874B1D /* UIButton+FSUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FSUtility.m"; sourceTree = "<group>"; };
+		E9D113CB24BEE46000874B1D /* FSColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSColorMacro.h; sourceTree = "<group>"; };
+		E9D113CD24BF086D00874B1D /* NSString+FSUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FSUtility.h"; sourceTree = "<group>"; };
+		E9D113CE24BF086D00874B1D /* NSString+FSUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FSUtility.m"; sourceTree = "<group>"; };
+		E9D113D124BFE5E900874B1D /* FSClipVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSClipVideoView.h; sourceTree = "<group>"; };
+		E9D113D224BFE5E900874B1D /* FSClipVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSClipVideoView.m; sourceTree = "<group>"; };
+		E9D113D424BFF85B00874B1D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E984C53624B835CA002A2A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D113D524BFF85B00874B1D /* MobileCoreServices.framework in Frameworks */,
+				E9D1139324BD885000874B1D /* CoreTelephony.framework in Frameworks */,
+				D43DF99BFDC9ECA67517584A /* Pods_FSGPUImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E984C55424B835CE002A2A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81FB767D2BAB2F08BD2C1A0C /* Pods_FSGPUImageTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E984C55F24B835CE002A2A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC6E99DB79DC80CEABF77C0 /* Pods_FSGPUImage_FSGPUImageUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061D6F5D16291C49ABCB7A07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9D113D424BFF85B00874B1D /* MobileCoreServices.framework */,
+				E9D1139224BD885000874B1D /* CoreTelephony.framework */,
+				4CF4D3F35468E884AAA496D4 /* Pods_FSGPUImage.framework */,
+				C631A4F7F46FE65B93AB07BA /* Pods_FSGPUImage_FSGPUImageUITests.framework */,
+				A9EF34F4C6173658CB2FFDAE /* Pods_FSGPUImageTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63DD61328938C2004C89FA08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				458D63983423A1FA92F1DE0A /* Pods-FSGPUImage.debug.xcconfig */,
+				1193AED35DF77E7F477EA737 /* Pods-FSGPUImage.release.xcconfig */,
+				AF87B5D588530BFADFCA8D70 /* Pods-FSGPUImage-FSGPUImageUITests.debug.xcconfig */,
+				BBC5F32C3B8DFDB116ADD272 /* Pods-FSGPUImage-FSGPUImageUITests.release.xcconfig */,
+				3E714B9DA48CFA2B01491A5B /* Pods-FSGPUImageTests.debug.xcconfig */,
+				B12209DD4FBA1DB66F37636B /* Pods-FSGPUImageTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E984C53024B835CA002A2A3A = {
+			isa = PBXGroup;
+			children = (
+				E984C53B24B835CA002A2A3A /* FSGPUImage */,
+				E984C55A24B835CE002A2A3A /* FSGPUImageTests */,
+				E984C56524B835CE002A2A3A /* FSGPUImageUITests */,
+				E984C53A24B835CA002A2A3A /* Products */,
+				63DD61328938C2004C89FA08 /* Pods */,
+				061D6F5D16291C49ABCB7A07 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E984C53A24B835CA002A2A3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E984C53924B835CA002A2A3A /* FSGPUImage.app */,
+				E984C55724B835CE002A2A3A /* FSGPUImageTests.xctest */,
+				E984C56224B835CE002A2A3A /* FSGPUImageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E984C53B24B835CA002A2A3A /* FSGPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				E9D113B824BDAC0000874B1D /* Resource */,
+				E9D1139724BD89AF00874B1D /* Extension */,
+				E9D1138524BD854400874B1D /* Issue */,
+				E984C53C24B835CA002A2A3A /* AppDelegate.h */,
+				E984C53D24B835CA002A2A3A /* AppDelegate.m */,
+				E984C54224B835CA002A2A3A /* ViewController.h */,
+				E984C54324B835CA002A2A3A /* ViewController.m */,
+				E984C54524B835CA002A2A3A /* Main.storyboard */,
+				E984C54B24B835CE002A2A3A /* Assets.xcassets */,
+				E984C54D24B835CE002A2A3A /* LaunchScreen.storyboard */,
+				E984C55024B835CE002A2A3A /* Info.plist */,
+				E984C55124B835CE002A2A3A /* main.m */,
+				E984C54824B835CA002A2A3A /* FSGPUImage.xcdatamodeld */,
+				E9D1139124BD879D00874B1D /* PrefixHeader.pch */,
+			);
+			path = FSGPUImage;
+			sourceTree = "<group>";
+		};
+		E984C55A24B835CE002A2A3A /* FSGPUImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				E984C55B24B835CE002A2A3A /* FSGPUImageTests.m */,
+				E984C55D24B835CE002A2A3A /* Info.plist */,
+			);
+			path = FSGPUImageTests;
+			sourceTree = "<group>";
+		};
+		E984C56524B835CE002A2A3A /* FSGPUImageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E984C56624B835CE002A2A3A /* FSGPUImageUITests.m */,
+				E984C56824B835CE002A2A3A /* Info.plist */,
+			);
+			path = FSGPUImageUITests;
+			sourceTree = "<group>";
+		};
+		E9D1138524BD854400874B1D /* Issue */ = {
+			isa = PBXGroup;
+			children = (
+				E9D113A824BDA3A200874B1D /* Model */,
+				E9D1138F24BD875A00874B1D /* Macro */,
+				E9D1138B24BD858C00874B1D /* Tool */,
+				E9D1138624BD854400874B1D /* VC */,
+				E9D1138724BD854400874B1D /* View */,
+			);
+			path = Issue;
+			sourceTree = "<group>";
+		};
+		E9D1138624BD854400874B1D /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E9D113D024BFE58800874B1D /* View */,
+				E9D1138824BD856A00874B1D /* FSCameraViewController.h */,
+				E9D1138924BD856A00874B1D /* FSCameraViewController.m */,
+				E9D113A524BDA38400874B1D /* FSEditVideoController.h */,
+				E9D113A624BDA38400874B1D /* FSEditVideoController.m */,
+				E96177B124C03B5C009EF83A /* FSClipVideoController.h */,
+				E96177B224C03B5C009EF83A /* FSClipVideoController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		E9D1138724BD854400874B1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9D1139524BD891D00874B1D /* DNLiveWindow.h */,
+				E9D1139424BD891D00874B1D /* DNLiveWindow.m */,
+				E9D113BF24BEA92700874B1D /* DNPlayerView.h */,
+				E9D113C024BEA92700874B1D /* DNPlayerView.m */,
+				E9D113C224BEB17C00874B1D /* FSStreamingContext.h */,
+				E9D113C324BEB17C00874B1D /* FSStreamingContext.m */,
+				E9D113C524BEDF9900874B1D /* FSTimeLine.h */,
+				E9D113C624BEDF9900874B1D /* FSTimeLine.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9D1138B24BD858C00874B1D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E9D1138C24BD865D00874B1D /* FSCameraConfig.h */,
+				E9D1138D24BD865D00874B1D /* FSCameraConfig.m */,
+				E9D113AC24BDA58E00874B1D /* FSCompoundTool.h */,
+				E9D113AD24BDA58E00874B1D /* FSCompoundTool.m */,
+				E9D113B224BDA79200874B1D /* FSPathTool.h */,
+				E9D113B324BDA79200874B1D /* FSPathTool.m */,
+				E9D113B524BDA96C00874B1D /* FSVideoImageTool.h */,
+				E9D113B624BDA96C00874B1D /* FSVideoImageTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E9D1138F24BD875A00874B1D /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				E9D1139024BD878000874B1D /* FSFrameMacro.h */,
+				E9D113CB24BEE46000874B1D /* FSColorMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		E9D1139724BD89AF00874B1D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E9D113CC24BF084D00874B1D /* NSUtility */,
+				E9D1139824BD89AF00874B1D /* UIUtility */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E9D1139824BD89AF00874B1D /* UIUtility */ = {
+			isa = PBXGroup;
+			children = (
+				E9D1139C24BD89D600874B1D /* UIImage+FSUtility.h */,
+				E9D1139D24BD89D600874B1D /* UIImage+FSUtility.m */,
+				E9D113A224BD9EA000874B1D /* UIView+FSUtility.h */,
+				E9D113A324BD9EA000874B1D /* UIView+FSUtility.m */,
+				E9D113AF24BDA74B00874B1D /* UIColor+FSUtility.h */,
+				E9D113B024BDA74B00874B1D /* UIColor+FSUtility.m */,
+				E9D113C824BEE2B600874B1D /* UIButton+FSUtility.h */,
+				E9D113C924BEE2B600874B1D /* UIButton+FSUtility.m */,
+				E96177B424C04875009EF83A /* UILabel+FSUtility.h */,
+				E96177B524C04875009EF83A /* UILabel+FSUtility.m */,
+			);
+			path = UIUtility;
+			sourceTree = "<group>";
+		};
+		E9D113A824BDA3A200874B1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9D113A924BDA41100874B1D /* FSRecordingInfo.h */,
+				E9D113AA24BDA41100874B1D /* FSRecordingInfo.m */,
+				E96177A524C003DA009EF83A /* FSVideoThumbnailModel.h */,
+				E96177A624C003DA009EF83A /* FSVideoThumbnailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9D113B824BDAC0000874B1D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E9D113B924BDAC0000874B1D /* Music */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E9D113B924BDAC0000874B1D /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				E96177B924C15453009EF83A /* 百花香.mp3 */,
+				E96177B724C14A8F009EF83A /* 世界这么大还是遇见你.mp3 */,
+				E9D113BA24BDAC0000874B1D /* Lovestoned-Thursdays.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		E9D113CC24BF084D00874B1D /* NSUtility */ = {
+			isa = PBXGroup;
+			children = (
+				E9D113CD24BF086D00874B1D /* NSString+FSUtility.h */,
+				E9D113CE24BF086D00874B1D /* NSString+FSUtility.m */,
+			);
+			path = NSUtility;
+			sourceTree = "<group>";
+		};
+		E9D113D024BFE58800874B1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9D113D124BFE5E900874B1D /* FSClipVideoView.h */,
+				E9D113D224BFE5E900874B1D /* FSClipVideoView.m */,
+				E96177A824C005CA009EF83A /* FSThumbnailCollectionCell.h */,
+				E96177A924C005CA009EF83A /* FSThumbnailCollectionCell.m */,
+				E96177AB24C02110009EF83A /* FSDragView.h */,
+				E96177AC24C02110009EF83A /* FSDragView.m */,
+				E96177AE24C029E8009EF83A /* FSThumbnailSequenceView.h */,
+				E96177AF24C029E8009EF83A /* FSThumbnailSequenceView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E984C53824B835CA002A2A3A /* FSGPUImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E984C56B24B835CE002A2A3A /* Build configuration list for PBXNativeTarget "FSGPUImage" */;
+			buildPhases = (
+				6C698DFBD08BDC71F61D62D5 /* [CP] Check Pods Manifest.lock */,
+				E984C53524B835CA002A2A3A /* Sources */,
+				E984C53624B835CA002A2A3A /* Frameworks */,
+				E984C53724B835CA002A2A3A /* Resources */,
+				9DF6823922D7A29997483794 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSGPUImage;
+			productName = FSGPUImage;
+			productReference = E984C53924B835CA002A2A3A /* FSGPUImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E984C55624B835CE002A2A3A /* FSGPUImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E984C56E24B835CE002A2A3A /* Build configuration list for PBXNativeTarget "FSGPUImageTests" */;
+			buildPhases = (
+				1CDEBE880DF3D8ACCC6CE42D /* [CP] Check Pods Manifest.lock */,
+				E984C55324B835CE002A2A3A /* Sources */,
+				E984C55424B835CE002A2A3A /* Frameworks */,
+				E984C55524B835CE002A2A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E984C55924B835CE002A2A3A /* PBXTargetDependency */,
+			);
+			name = FSGPUImageTests;
+			productName = FSGPUImageTests;
+			productReference = E984C55724B835CE002A2A3A /* FSGPUImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E984C56124B835CE002A2A3A /* FSGPUImageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E984C57124B835CE002A2A3A /* Build configuration list for PBXNativeTarget "FSGPUImageUITests" */;
+			buildPhases = (
+				1BB3FD0964E2BA3DA01DE3D6 /* [CP] Check Pods Manifest.lock */,
+				E984C55E24B835CE002A2A3A /* Sources */,
+				E984C55F24B835CE002A2A3A /* Frameworks */,
+				E984C56024B835CE002A2A3A /* Resources */,
+				EBD6D4C9BDD1BA13BD43DDA3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E984C56424B835CE002A2A3A /* PBXTargetDependency */,
+			);
+			name = FSGPUImageUITests;
+			productName = FSGPUImageUITests;
+			productReference = E984C56224B835CE002A2A3A /* FSGPUImageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E984C53124B835CA002A2A3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "燕来秋";
+				TargetAttributes = {
+					E984C53824B835CA002A2A3A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					E984C55624B835CE002A2A3A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = E984C53824B835CA002A2A3A;
+					};
+					E984C56124B835CE002A2A3A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = E984C53824B835CA002A2A3A;
+					};
+				};
+			};
+			buildConfigurationList = E984C53424B835CA002A2A3A /* Build configuration list for PBXProject "FSGPUImage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E984C53024B835CA002A2A3A;
+			productRefGroup = E984C53A24B835CA002A2A3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E984C53824B835CA002A2A3A /* FSGPUImage */,
+				E984C55624B835CE002A2A3A /* FSGPUImageTests */,
+				E984C56124B835CE002A2A3A /* FSGPUImageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E984C53724B835CA002A2A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E984C54F24B835CE002A2A3A /* LaunchScreen.storyboard in Resources */,
+				E9D113BB24BDAC0000874B1D /* Lovestoned-Thursdays.mp3 in Resources */,
+				E96177B824C14A90009EF83A /* 世界这么大还是遇见你.mp3 in Resources */,
+				E96177BA24C15453009EF83A /* 百花香.mp3 in Resources */,
+				E984C54C24B835CE002A2A3A /* Assets.xcassets in Resources */,
+				E984C54724B835CA002A2A3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E984C55524B835CE002A2A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E984C56024B835CE002A2A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BB3FD0964E2BA3DA01DE3D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FSGPUImage-FSGPUImageUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CDEBE880DF3D8ACCC6CE42D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FSGPUImageTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C698DFBD08BDC71F61D62D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FSGPUImage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DF6823922D7A29997483794 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSGPUImage/Pods-FSGPUImage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSGPUImage/Pods-FSGPUImage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSGPUImage/Pods-FSGPUImage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBD6D4C9BDD1BA13BD43DDA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSGPUImage-FSGPUImageUITests/Pods-FSGPUImage-FSGPUImageUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSGPUImage-FSGPUImageUITests/Pods-FSGPUImage-FSGPUImageUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSGPUImage-FSGPUImageUITests/Pods-FSGPUImage-FSGPUImageUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E984C53524B835CA002A2A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E984C55224B835CE002A2A3A /* main.m in Sources */,
+				E984C54424B835CA002A2A3A /* ViewController.m in Sources */,
+				E9D113C424BEB17C00874B1D /* FSStreamingContext.m in Sources */,
+				E9D113A424BD9EA000874B1D /* UIView+FSUtility.m in Sources */,
+				E9D113C124BEA92700874B1D /* DNPlayerView.m in Sources */,
+				E9D113C724BEDF9900874B1D /* FSTimeLine.m in Sources */,
+				E9D1139E24BD89D600874B1D /* UIImage+FSUtility.m in Sources */,
+				E96177A724C003DA009EF83A /* FSVideoThumbnailModel.m in Sources */,
+				E9D113CF24BF086D00874B1D /* NSString+FSUtility.m in Sources */,
+				E96177AD24C02110009EF83A /* FSDragView.m in Sources */,
+				E9D113A724BDA38400874B1D /* FSEditVideoController.m in Sources */,
+				E9D113B424BDA79200874B1D /* FSPathTool.m in Sources */,
+				E9D113AB24BDA41100874B1D /* FSRecordingInfo.m in Sources */,
+				E96177B024C029E8009EF83A /* FSThumbnailSequenceView.m in Sources */,
+				E96177B624C04875009EF83A /* UILabel+FSUtility.m in Sources */,
+				E9D1139624BD891D00874B1D /* DNLiveWindow.m in Sources */,
+				E9D113AE24BDA58E00874B1D /* FSCompoundTool.m in Sources */,
+				E984C53E24B835CA002A2A3A /* AppDelegate.m in Sources */,
+				E9D113B124BDA74B00874B1D /* UIColor+FSUtility.m in Sources */,
+				E9D113B724BDA96C00874B1D /* FSVideoImageTool.m in Sources */,
+				E9D113CA24BEE2B600874B1D /* UIButton+FSUtility.m in Sources */,
+				E9D1138E24BD865D00874B1D /* FSCameraConfig.m in Sources */,
+				E96177AA24C005CA009EF83A /* FSThumbnailCollectionCell.m in Sources */,
+				E96177B324C03B5C009EF83A /* FSClipVideoController.m in Sources */,
+				E984C54A24B835CA002A2A3A /* FSGPUImage.xcdatamodeld in Sources */,
+				E9D113D324BFE5E900874B1D /* FSClipVideoView.m in Sources */,
+				E9D1138A24BD856A00874B1D /* FSCameraViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E984C55324B835CE002A2A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E984C55C24B835CE002A2A3A /* FSGPUImageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E984C55E24B835CE002A2A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E984C56724B835CE002A2A3A /* FSGPUImageUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E984C55924B835CE002A2A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E984C53824B835CA002A2A3A /* FSGPUImage */;
+			targetProxy = E984C55824B835CE002A2A3A /* PBXContainerItemProxy */;
+		};
+		E984C56424B835CE002A2A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E984C53824B835CA002A2A3A /* FSGPUImage */;
+			targetProxy = E984C56324B835CE002A2A3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E984C54524B835CA002A2A3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E984C54624B835CA002A2A3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E984C54D24B835CE002A2A3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E984C54E24B835CE002A2A3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E984C56924B835CE002A2A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E984C56A24B835CE002A2A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E984C56C24B835CE002A2A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 458D63983423A1FA92F1DE0A /* Pods-FSGPUImage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 334V4U3KT6;
+				GCC_PREFIX_HEADER = FSGPUImage/PrefixHeader.pch;
+				INFOPLIST_FILE = FSGPUImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dnaer.english;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E984C56D24B835CE002A2A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1193AED35DF77E7F477EA737 /* Pods-FSGPUImage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 334V4U3KT6;
+				GCC_PREFIX_HEADER = FSGPUImage/PrefixHeader.pch;
+				INFOPLIST_FILE = FSGPUImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dnaer.english;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E984C56F24B835CE002A2A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E714B9DA48CFA2B01491A5B /* Pods-FSGPUImageTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FSGPUImageTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FSGPUImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FSGPUImage.app/FSGPUImage";
+			};
+			name = Debug;
+		};
+		E984C57024B835CE002A2A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B12209DD4FBA1DB66F37636B /* Pods-FSGPUImageTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FSGPUImageTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FSGPUImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FSGPUImage.app/FSGPUImage";
+			};
+			name = Release;
+		};
+		E984C57224B835CE002A2A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF87B5D588530BFADFCA8D70 /* Pods-FSGPUImage-FSGPUImageUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FSGPUImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FSGPUImageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FSGPUImage;
+			};
+			name = Debug;
+		};
+		E984C57324B835CE002A2A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC5F32C3B8DFDB116ADD272 /* Pods-FSGPUImage-FSGPUImageUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FSGPUImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FSGPUImageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FSGPUImage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E984C53424B835CA002A2A3A /* Build configuration list for PBXProject "FSGPUImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E984C56924B835CE002A2A3A /* Debug */,
+				E984C56A24B835CE002A2A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E984C56B24B835CE002A2A3A /* Build configuration list for PBXNativeTarget "FSGPUImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E984C56C24B835CE002A2A3A /* Debug */,
+				E984C56D24B835CE002A2A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E984C56E24B835CE002A2A3A /* Build configuration list for PBXNativeTarget "FSGPUImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E984C56F24B835CE002A2A3A /* Debug */,
+				E984C57024B835CE002A2A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E984C57124B835CE002A2A3A /* Build configuration list for PBXNativeTarget "FSGPUImageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E984C57224B835CE002A2A3A /* Debug */,
+				E984C57324B835CE002A2A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E984C54824B835CA002A2A3A /* FSGPUImage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E984C54924B835CA002A2A3A /* FSGPUImage.xcdatamodel */,
+			);
+			currentVersion = E984C54924B835CA002A2A3A /* FSGPUImage.xcdatamodel */;
+			path = FSGPUImage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E984C53124B835CA002A2A3A /* Project object */;
+}

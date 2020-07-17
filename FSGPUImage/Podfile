@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'FSGPUImage' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FSGPUImage
+
+  pod 'Masonry', '~> 1.1.0'
+  pod 'GPUImage'
+  pod 'TZImagePickerController'
+  pod 'CHGAdapter', '~> 1.1.3'
+
+  target 'FSGPUImageTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'FSGPUImageUITests' do
+    # Pods for testing
+  end
+
+end
