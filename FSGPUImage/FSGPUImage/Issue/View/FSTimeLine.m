@@ -36,7 +36,7 @@
 
 #pragma mark - 外部调用
 - (void)appendVideoClip:(NSString *)path trimIn:(int64_t)trimIn trimOut:(int64_t)trimOut {
-    NSLog(@"video trimOut : %lld",trimOut);
+    NSLog(@"video trimIn:%lld trimOut : %lld",trimIn,trimOut);
     NSURL *videoUrl = [NSURL fileURLWithPath:path];
     if (videoUrl) {
         AVURLAsset* videoAsset = [[AVURLAsset alloc] initWithURL:videoUrl options:nil];
@@ -45,7 +45,7 @@
         //开始位置startTime
         CMTime startTime = CMTimeMake(trimIn, FS_TIME_BASE);//CMTimeMakeWithSeconds(trimIn, videoAsset.duration.timescale);
         //截取长度videoDuration
-        CMTime videoDuration = CMTimeMake(trimOut, FS_TIME_BASE);//CMTimeMakeWithSeconds(trimOut, videoAsset.duration.timescale);
+        CMTime videoDuration = CMTimeMake(trimOut-trimIn, FS_TIME_BASE);//CMTimeMakeWithSeconds(trimOut, videoAsset.duration.timescale);
         CMTimeRange videoTimeRange = CMTimeRangeMake(startTime, videoDuration);
         
         //视频采集compositionVideoTrack
@@ -102,7 +102,7 @@
         //开始位置startTime
         CMTime startTime = CMTimeMake(audioIn, FS_TIME_BASE);//CMTimeMakeWithSeconds(audioIn, audioAsset.duration.timescale);
         //截取长度videoDuration
-        CMTime videoDuration = CMTimeMake(audioOut, FS_TIME_BASE);//CMTimeMakeWithSeconds(audioOut, audioAsset.duration.timescale);
+        CMTime videoDuration = CMTimeMake(audioOut-audioIn, FS_TIME_BASE);//CMTimeMakeWithSeconds(audioOut, audioAsset.duration.timescale);
         
         CMTimeRange audioTimeRange = CMTimeRangeMake(startTime, videoDuration);
         
@@ -179,6 +179,13 @@
                     model.size = CGSizeMake(allWidth-x, 0);
                 }
                 [array addObject:model];
+                if (array.count == 15) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        if (block) {
+                            block(array);
+                        }
+                    });
+                }
             }
             x += frameWidth;
             usec += frameUsec;

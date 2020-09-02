@@ -63,6 +63,7 @@
     [array addObjectsFromArray:self.dataArray];
     [array addObject:self.rightModel];
     self.collectionView.cellDatas = @[array];
+    [self.collectionView reloadData];
 }
 
 #pragma mark - 懒加载

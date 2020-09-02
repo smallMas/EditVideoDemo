@@ -85,7 +85,7 @@
 - (void)playStartTime:(int64_t)startTime endTime:(int64_t)endTime {
     if ((startTime > 0 && startTime < FS_TIME_BASE) ||
         startTime > self.timeline.duration) {
-        NSLog(@"开始播放错误 : 开始时间错误");
+        NSLog(@"开始播放错误 : 开始时间错误 %lld all >> %lld",startTime,self.timeline.duration);
         return;
     }
     if (endTime > self.timeline.duration) {
@@ -130,7 +130,7 @@
         return;
     }
     //AVAssetExportSession用于合并文件，导出合并后文件，presetName文件的输出类型
-    AVAssetExportSession *assetExportSession = [[AVAssetExportSession alloc] initWithAsset:[self.timeline getTimeAsset] presetName:AVAssetExportPresetHighestQuality];//AVAssetExportPreset640x480
+    AVAssetExportSession *assetExportSession = [[AVAssetExportSession alloc] initWithAsset:[self.timeline getTimeAsset] presetName:AVAssetExportPresetMediumQuality];//AVAssetExportPreset640x480
     
     AVMutableVideoComposition *avMutableVideoComposition = [self.timeline videoComposition];
     [assetExportSession setVideoComposition:avMutableVideoComposition];

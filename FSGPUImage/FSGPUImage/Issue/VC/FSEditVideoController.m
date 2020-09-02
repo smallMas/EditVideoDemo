@@ -147,7 +147,8 @@
 
 #pragma mark - 内部方法
 - (void)replay {
-    [self.streamingContext playStartTime:self.recordingInfo.trimIn endTime:self.recordingInfo.trimOut];
+//    [self.streamingContext playStartTime:self.recordingInfo.trimIn endTime:self.recordingInfo.trimOut];
+    [self.streamingContext playStartTime:0 endTime:self.recordingInfo.trimOut-self.recordingInfo.trimIn];
 }
 
 - (void)stop {

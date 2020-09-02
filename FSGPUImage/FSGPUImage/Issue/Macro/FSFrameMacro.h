@@ -11,6 +11,7 @@ typedef void (^ FSComplete)(void);
 typedef void (^ FSSuccessBlock)(BOOL isSuccess);
 typedef void (^ FSSuccessDataBlock)(BOOL isSuccess, id data);
 typedef void (^ FSArrayBlock)(NSArray *array);
+typedef void (^ FSFirstArrayBlock)(BOOL isFirst, NSArray *array);
 
 
 #ifndef weakify

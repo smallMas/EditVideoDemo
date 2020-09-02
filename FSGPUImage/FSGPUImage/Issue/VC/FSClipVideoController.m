@@ -169,6 +169,7 @@
 - (void)nextAction:(id)sender {
     [self stop];
     
+    NSLog(@"self.start >>> %lld  self.end >>> %lld all >>> %lld",self.start,self.end,self.timeline.duration);
     self.recordingInfo.trimIn = self.start;
     self.recordingInfo.trimOut = self.end;
     

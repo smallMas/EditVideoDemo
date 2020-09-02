@@ -193,7 +193,7 @@
         DN_WEAK_SELF
         [self.sequnceView configTimeline:timeline maxDuration:maxSecond block:^{
             DN_STRONG_SELF
-            [self startPlay];
+//            [self startPlay];
         }];
     }
 }

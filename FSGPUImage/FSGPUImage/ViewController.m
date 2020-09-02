@@ -81,6 +81,7 @@
 }
 
 - (void)gotoClipVideoURL:(NSURL *)URL {
+    NSLog(@"URL >>>> %@",URL);
     FSRecordingInfo *info = [FSRecordingInfo new];
     info.recordingURL = URL;
     
